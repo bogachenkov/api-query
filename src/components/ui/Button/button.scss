@@ -1,0 +1,36 @@
+@import '@scss/variables.scss';
+@import '@scss/mixins.scss';
+
+.button {
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  @include inlineFlexCenter;
+  background-color: $main-color;
+  border: none;
+  border-radius: 20px;
+  padding: .75em 1.5em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  transition: .2s;
+  flex-shrink: 0;
+
+  > svg, > span.spinner {
+    margin-left: .75em;
+  }
+
+  &:hover {
+    background-color: transparentize($color: $main-color, $amount: .3);
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px 3px transparentize($color: $dark-blue-shadow, $amount: .5);;
+  }
+
+  &:disabled {
+    background-color: transparentize($color: $main-color, $amount: .7);
+    cursor: auto;
+  }
+}

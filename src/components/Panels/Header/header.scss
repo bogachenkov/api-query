@@ -1,0 +1,8 @@
+@import '@scss/mixins.scss';
+
+.header {
+  @include flex(center, flex-end);
+  padding: 0 30px;
+  background-color: #ffffff;
+  padding: 10px 30px;
+}

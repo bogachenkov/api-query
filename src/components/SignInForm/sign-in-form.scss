@@ -1,0 +1,22 @@
+@import '@scss/variables.scss';
+
+.sign-in-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 50px 30px;
+  text-align: center;
+  
+  &--logo {
+    height: 70px;
+  }
+
+  &--title {
+    font-family: $secondary-font;
+    margin-bottom: 1.5em;
+    color: $main-color;
+  }
+
+  > .button {
+    width: 100%;
+  }
+}

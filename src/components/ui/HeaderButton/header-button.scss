@@ -1,0 +1,31 @@
+@import '@scss/variables.scss';
+@import '@scss/mixins.scss';
+
+.header-button {
+  @include inlineFlexCenter;
+  @include size(50px, 30px);
+  cursor: pointer;
+  outline: none;
+  border: 1px solid $border-btn-color;
+  border-radius: 3px;
+  background-color: $body-bg-color;
+  transition: .2s;
+  padding: 0;
+
+  &:hover, &.active {
+    border-color: $input-color;
+    background-color: $response-bg-color;
+  }
+
+  &.active {
+    color: $blue-font-color;
+
+    &:focus {
+      box-shadow: 0 0 3px 3px $input-color;
+    }
+  }
+  
+  &:focus {
+    box-shadow: 0 0 3px 3px transparentize($color: $border-btn-color, $amount: .5);
+  }
+}

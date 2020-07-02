@@ -1,0 +1,12 @@
+@import '@scss/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg-color;
+  font-family: $main-font;
+  font-weight: 400;
+}

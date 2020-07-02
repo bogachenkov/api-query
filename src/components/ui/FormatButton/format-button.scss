@@ -1,0 +1,32 @@
+@import '@scss/variables.scss';
+
+.format-button {
+  display: inline-flex;
+  align-items: center;
+  padding: .75em 1em;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  color: $blue-font-color;
+  border: 1px solid $blue-font-color;
+  border-radius: 5px;
+  transition: .2s;
+
+  > svg {
+    margin-right: .75em;
+  }
+
+  &:hover {
+    color: $main-color;
+    border-color: $main-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px 3px transparentize($color: $dark-blue-shadow, $amount: .5);
+  }
+
+  &:disabled {
+    background-color: transparentize($color: $main-color, $amount: .7);
+    cursor: auto;
+  }
+}

@@ -1,0 +1,10 @@
+.app-grid {
+  max-width: 100%;
+  min-width: 768px;
+  height: 100vh;
+  min-height: 630px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 70px 36px 1fr 70px;
+  grid-template-columns: 1fr;
+}

@@ -1,0 +1,48 @@
+@import '@scss/variables.scss';
+@import '@scss/mixins.scss';
+
+.form-field {
+  margin-bottom: 2em;
+  text-align: left;
+  
+  > label {
+    display: inline-block;
+    margin-bottom: .75em;
+    margin-left: 1.5em;
+    font-size: 13px;
+    font-weight: 600;
+    color: $main-color;
+  }
+
+  &--input {
+    color: $input-color;
+    position: relative;
+
+    > svg {
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
+    }
+
+    > input {
+      @include size(100%, 50px);
+      border-radius: 20px;
+      border: 1px solid $border-btn-color;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 600;
+      color: inherit;
+      outline: none;
+      padding: 1em 1.5em 1em 3em;
+      transition: .3s;
+
+      &:focus, &:hover {
+        border-color: $input-color;
+      }
+      
+      &:focus {
+        box-shadow: 0 0 3px 3px transparentize($color: $input-color, $amount: .5);
+      }
+    }
+  }
+}

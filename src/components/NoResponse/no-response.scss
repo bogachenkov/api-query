@@ -1,0 +1,22 @@
+@import '@scss/mixins.scss';
+@import '@scss/variables.scss';
+
+.no-response {
+  background-color: $response-bg-color;
+  position: absolute;
+  @include size(100%, 100%);
+  @include flexCenter;
+  flex-flow: column;
+  padding: 15px;
+  text-align: center;
+
+  > img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &--msg {
+    font-weight: 600;
+    color: $blue-font-color;
+  }
+}

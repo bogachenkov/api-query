@@ -1,0 +1,10 @@
+@import '@scss/mixins.scss';
+
+.user-indicator {
+  @include inlineFlexCenter;
+  @include size(50px, 30px);
+  border: 1px solid $border-btn-color;
+  border-radius: 3px;
+  background-color: $body-bg-color;
+  padding: 0;
+}

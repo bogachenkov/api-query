@@ -1,0 +1,35 @@
+@import '@scss/variables.scss';
+@import '@scss/mixins.scss';
+
+.editor-actions {
+  @include flex(center, space-between);
+  padding: 0 30px;
+  background-color: $body-bg-color;
+
+  > .button {
+    position: relative;
+  }
+
+  &--error {
+    position: absolute;
+    left: calc(100% + 20px);
+    width: 210px;
+    padding: .75em;
+    @include inlineFlexCenter;
+    pointer-events: none;
+    background-color: $main-color;
+    word-break: keep-all;
+    border-radius: 3px;
+    font-size: 11px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      @include size(0);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent; 
+      border-right: 7px solid $main-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '@scss/variables.scss';
+
+.github-link {
+  color: transparentize($color: #000000, $amount: 0.3);
+
+  > a {
+    padding: .5em;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    border-radius: 5px;
+    transition: .2s;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 3px 3px transparentize($color: $main-color, $amount: .5);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '@scss/mixins.scss';
+@import '@scss/variables.scss';
+
+.history {
+  position: relative;
+  @include size(100%, 100%);
+  display: flex;
+  justify-content: flex-end;
+  background-color: $body-bg-color;
+  border-top: 1px solid $border-color;
+  font-family: $secondary-font;
+  font-weight: 400;
+
+  &--clear {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    @include inlineFlexCenter;
+    border: none;
+    width: 36px;
+    border-left: 1px solid $border-color;
+    transition: .3s;
+
+    &:focus {
+      box-shadow: 1px 1px 3px $blue-shadow;
+    }
+
+    &:hover {
+      background-color: $blue-shadow;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+      @include size(20px, 100%);
+      left: -21px;
+      background: linear-gradient(to right, transparent ,#F3F4F5);
+    }
+  }
+
+  &--tabs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 36px;
+    height: calc(100% + 116px);
+    display: flex;
+    align-items: flex-start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

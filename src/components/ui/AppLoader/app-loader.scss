@@ -1,0 +1,10 @@
+@import '@scss/variables.scss';
+@import '@scss/mixins.scss';
+
+.app-loader {
+  position: absolute;
+  @include size(100%, 100vh);
+  @include flexCenter;
+  background-color: #ffffff;
+  color: $blue-font-color;
+}

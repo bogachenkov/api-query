@@ -1,0 +1,12 @@
+@import '@scss/mixins.scss';
+
+.header-item {
+  @include flexCenter;
+  flex-flow: column;
+  font-size: 11px;
+  margin-left: 3em;
+
+  > p {
+    margin: .5em 0 0 0;
+  }
+}

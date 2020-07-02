@@ -1,0 +1,27 @@
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
+// Colors
+$main-color: #3B4859;
+$body-bg-color: #EEF4F5;
+$response-bg-color: #E4EBEE;
+
+$blue-font-color: #69A1AC;
+$input-color: #A6C5CC;
+
+$border-color: #D2D5D9;
+$border-btn-color: #D2E3E7;
+
+$blue-shadow: #B9D8DD;
+$dark-blue-shadow: #69A1AC;
+
+// Fonts
+$main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Jost', sans-serif;

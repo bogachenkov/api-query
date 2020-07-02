@@ -1,0 +1,24 @@
+@import '@scss/variables.scss';
+@import '@scss/mixins.scss';
+
+.logo {
+  @include inlineFlexCenter;
+  margin-right: auto;
+  text-decoration: none;
+  height: 100%;
+  color: $main-color;
+  
+  > img {
+    height: 40px;
+    margin-right: .5em;
+  }
+
+  > p {
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0 0 0 .25em;
+  }
+}
